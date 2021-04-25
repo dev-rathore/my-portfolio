@@ -1,0 +1,38 @@
+// Base Code | Common for all
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: $paragraph;
+  background-color: $starWhite;
+}
+
+body, html{
+  overflow-x: hidden;
+}
+
+:focus {
+  outline: 2px solid $black;
+  outline-offset: 1px;
+}
+
+@media screen and (max-width:768px){
+  html{
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width:480px){
+  html{
+    font-size: 45%;
+  }
+}

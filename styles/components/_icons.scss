@@ -1,0 +1,11 @@
+
+.icon{
+  color: #f4f2ff;
+  margin: 2rem;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+  
+  &:hover{
+    transform: translateY(-5px);
+  }
+}

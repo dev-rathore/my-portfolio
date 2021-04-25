@@ -1,0 +1,3 @@
+const underline = document.querySelector('span');
+underline.classList.add('underline');
+document.body.append(underline);
