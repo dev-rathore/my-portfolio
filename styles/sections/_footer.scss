@@ -1,10 +1,14 @@
 #footer {
+  padding: 8rem 0 10rem; // Can be improved
   text-align: center;
-  background-color: $black;
-  padding: 8% 0% 10%;
+  background-color: $dark;
+
+  @media screen and (max-width: 480px) {
+    padding: 5rem 0 6rem; // Can be improved
+  }
 
   .copyright {
-    font-size: 1.8rem;
-    color: $starWhite;
+    font-size: 2rem;
+    color: $light;
   }
 }

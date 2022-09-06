@@ -22,6 +22,13 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      size="32x32"
+      href="./assets/favicon.png"
+    />
   </head>
   <body>
     <header id="header">
@@ -75,7 +82,7 @@
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
+      <h3>About Me</h3>
       <div class="profile">
         <img
           class="profile-image"
@@ -110,17 +117,17 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2 class="projects-head">My Projects</h2>
+      <h3 class="projects-head">My Projects</h3>
       <div class="project">
         <img
           class="tilt project-image project-image1"
-          src="./assets/where-is-the-face.png"
-          alt="Where is the face"
+          src="./assets/project-1.png"
+          alt="Pixel Store"
           data-aos="fade-down-right"
           data-tilt
         />
         <div class="project-text project-text1" data-aos="fade-up-left">
-          <h2 class="project-heading">Pixel Store</h2>
+          <h4 class="project-heading">Pixel Store</h4>
           <p class="project-description">
             Pixel Store is an E-commerce store for buying products like camera,
             gimbals, tripods, drones built using
@@ -151,17 +158,17 @@
       <div class="project">
         <img
           class="tilt project-image project-image2"
-          src="./assets/where-is-the-face.png"
-          alt="Where is the face"
+          src="./assets/project-2.png"
+          alt="Rent & Ride"
           data-aos="fade-down-right"
           data-tilt
         />
         <div class="project-text project-text2" data-aos="fade-up-left">
-          <h2 class="project-heading">Rent & Ride</h2>
+          <h4 class="project-heading">Rent & Ride</h4>
           <p class="project-description">
             Rent & Ride is a vehicle rental website that has feature for renting
             different types of vehicles e.g. four wheeler, two wheeler for a
-            short period of time. It is build using technologies like
+            short period of time. It is built using technologies like
             <span class="highlight">HTML</span>,
             <span class="highlight">CSS</span>,
             <span class="highlight">JavaScript</span>,
@@ -191,22 +198,23 @@
       <div class="project">
         <img
           class="tilt project-image project-image3"
-          src="./assets/where-is-the-face.png"
-          alt="Where is the face"
+          src="./assets/project-3.png"
+          alt="Weather Web App"
           data-aos="fade-down-right"
           data-tilt
         />
         <div class="project-text project-text3" data-aos="fade-up-left">
-          <h2 class="project-heading">Weather Web App</h2>
+          <h4 class="project-heading">Weather Web App</h4>
           <p class="project-description">
-            Pixel Store is an E-commerce store built using
-            <span class="highlight">ReactJS</span>. It also has authentication
-            and database that are implemented using
-            <span class="highlight">Firebase</span> authentication and
-            firestore. For state management in ReactJS,
-            <span class="highlight">React Context API</span> is used. And
-            routing is done using
-            <span class="highlight">React Router DOM</span>.
+            Weather Web App is a web app that let's you know the weather
+            conditions of any particular city. This is built using
+            <span class="highlight">NodeJS</span>,
+            <span class="highlight">ExpressJS</span>,
+            <span class="highlight">EJS</span>,
+            <span class="highlight">Weather API</span>,
+            <span class="highlight">HTML</span>,
+            <span class="highlight">CSS</span>. This web app is deployed on
+            <span class="highlight">Heroku</span> Server.
           </p>
           <button
             class="btn btn-wobble-bottom"
@@ -226,7 +234,7 @@
 
     <!-- Skills Section -->
     <section id="skills">
-      <h2 class="skills-head">My Skills</h2>
+      <h3 class="skills-head">My Skills</h3>
       <div class="skills-list">
         <div class="skill">
           <i class="origin reactjs fab fa-react fa-2x"></i>
@@ -235,16 +243,13 @@
           <i class="origin javascript fab fa-js fa-2x"></i>
         </div>
         <div class="skill">
+          <i class="origin nodejs fab fa-node fa-2x"></i>
+        </div>
+        <div class="skill">
           <i class="origin css fab fa-css3-alt fa-2x"></i>
         </div>
         <div class="skill">
           <i class="origin bootstrap fab fa-bootstrap fa-2x"></i>
-        </div>
-        <div class="skill">
-          <i class="origin html fab fa-html5 fa-2x"></i>
-        </div>
-        <div class="skill">
-          <i class="origin nodejs fab fa-node fa-2x"></i>
         </div>
         <div class="skill">
           <img
@@ -254,11 +259,20 @@
           />
         </div>
         <div class="skill">
+          <i class="origin html fab fa-html5 fa-2x"></i>
+        </div>
+        <div class="skill">
           <img
             class="origin mongodb"
             src="./assets/mongodb.png"
             alt="MongoDB"
           />
+        </div>
+        <div class="skill">
+          <i class="origin git fab fa-git-square fa-2x"></i>
+        </div>
+        <div class="skill">
+          <img class="origin ejs" src="./assets/ejs.jpg" alt="EJS" />
         </div>
         <div class="skill">
           <img
@@ -268,25 +282,13 @@
           />
         </div>
         <div class="skill">
-          <img class="origin ejs" src="./assets/ejs.jpg" alt="EJS" />
-        </div>
-        <div class="skill">
-          <i class="origin git fab fa-git-square fa-2x"></i>
-        </div>
-        <div class="skill">
           <i class="origin java fab fa-java fa-2x"></i>
-        </div>
-        <div class="skill">
-          <img class="origin c-plus-plus" src="./assets/c++.png" alt="C++" />
-        </div>
-        <div class="skill">
-          <img class="origin c" src="./assets/c.png" alt="C" />
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2 data-aos="fade-right">CONTACT</h2>
+      <h4 data-aos="fade-right">CONTACT</h4>
       <button
         onclick="location.href='mailto:rathoredvd3001@email.com'"
         class="btn btn-sweep-to-right"
@@ -322,7 +324,7 @@
           <i class="icon fab fa-github fa-3x"></i>
         </a>
       </div>
-      <p class="copyright">&#169; 2022 | Devender Singh Rathore</p>
+      <p class="copyright">&#169; 2022 | Dev's Portfolio</p>
     </footer>
 
     <script src="./js/script.js"></script>

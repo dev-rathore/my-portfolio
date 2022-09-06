@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  font-family: $paragraph;
-  background-color: $starWhite;
+  font-family: $openSans;
+  background-color: $light;
 }
 
 body,
@@ -26,8 +26,31 @@ html {
 }
 
 :focus {
-  outline: 2px solid $black;
-  outline-offset: 1px;
+  // outline: 2px solid $dark;
+  // outline-offset: 1px;
+  outline: none;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.7rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.7rem;
+}
+h5 {
+  font-size: 2.2rem;
+}
+h6 {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 768px) {

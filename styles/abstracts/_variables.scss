@@ -1,17 +1,18 @@
+$roboto: "Roboto", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$encodeSans: "Encode Sans", sans-serif;
 
-$heading : 'Roboto', sans-serif;
-$paragraph : 'Open Sans', sans-serif;
-$link : 'Encode Sans', sans-serif;
+$light: #f4f2ff;
+$dark: #212f3d;
+$grey: #808b96;
+$primaryColor: #1a63f8;
+// $secondaryColor: ;
+$blue: #1a63f8;
+$red: #c61f63;
+$orange: #ff9933;
+$green: #138808;
 
-$starWhite : #f4f2ff;
-$black: #212F3D;
-$grey: #808B96;
-$blue: #1A63F8;
-$green: #17A589;
-$purple: #8E44AD;
-$red: #C61F63;
-
-$linearGradient: linear-gradient((45deg, $blue 0%, #1D76FB 100%));
+$linearGradient: linear-gradient((45deg, $blue 0%, #1d76fb 100%));
 // $linearGradient: linear-gradient((45deg, #16A085 0%, #58D68D 100%));
 
 $extraLarge: 7rem;

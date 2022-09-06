@@ -1,30 +1,32 @@
-
-#header{
+#header {
   min-height: 100vh;
-  background: linear-gradient(-45deg, white 50%, $starWhite 50%);
+  background: linear-gradient(-45deg, white 50%, $light 50%);
   padding: 2% 4%;
-  color: $black;
+  color: $dark;
+
+  @media screen and (max-width: 420px) {
+    min-height: 300px;
+  }
 }
 
-.nav-toggle{
+.nav-toggle {
   display: none;
 }
 
-.header-part1{
+.header-part1 {
   position: relative;
   font-size: $medium;
   font-weight: 300;
 
-  #nav{
-
-    ul li{
+  #nav {
+    ul li {
       display: inline-block;
       padding: 1rem 1rem 1rem 0rem;
-      a{
-        color: $black;
+      a {
+        color: $dark;
         text-decoration: none;
         cursor: pointer;
-        font-family: $link;
+        font-family: $encodeSans;
         font-size: $small;
         padding: 0.3rem 0.8rem;
         transition: color 0.3s ease;
@@ -32,72 +34,71 @@
     }
   }
 
-  .logo{
+  .logo {
     cursor: pointer;
     display: inline-block;
     padding: 1rem 1.5rem;
     position: absolute;
     right: 1rem;
     top: 1rem;
-  
-    &::after{
+
+    &::after {
       @include logo-pseudo();
       bottom: 0;
       right: 0;
-      border-bottom: 2px solid $black;
-      border-right: 2px solid $black;
+      border-bottom: 2px solid $dark;
+      border-right: 2px solid $dark;
       border-bottom-right-radius: 2px;
     }
-    &::before{
+    &::before {
       @include logo-pseudo();
       top: 0;
       left: 0;
-      border-top: 2px solid $black;
-      border-left: 2px solid $black;
+      border-top: 2px solid $dark;
+      border-left: 2px solid $dark;
       border-top-left-radius: 2px;
     }
-    &:hover::after{
+    &:hover::after {
       @include logo-hover;
     }
-    &:hover::before{
+    &:hover::before {
       @include logo-hover;
     }
   }
 }
 
-.header-part2{
+.header-part2 {
   height: calc(100vh - 10vh);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 
-  h1{
-    font-family: $heading;
+  h1 {
+    font-family: $roboto;
     font-size: $extraLarge;
     font-weight: 500;
   }
-  p{
+  p {
     font-size: $large;
     margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width:768px){
-
-  .header-part1{
-    #nav{
+@media screen and (max-width: 768px) {
+  .header-part1 {
+    #nav {
       position: fixed;
-      background: $black;
-      color: $starWhite;
+      background: $dark;
+      color: $light;
       transform-origin: 0% 0%;
       transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 100;   
+      z-index: 100;
 
       .nav-list {
         display: flex;
@@ -108,10 +109,10 @@
         align-items: center;
 
         .nav-link {
-          color: inherit;  
+          color: inherit;
           font-size: $large;
         }
-  
+
         .nav-link:hover {
           color: $grey;
         }
@@ -121,7 +122,7 @@
 
   .nav-toggle {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -133,12 +134,12 @@
     .hamburger {
       display: block;
       position: relative;
+      background: white;
     }
 
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-      background: $black;
       width: 3.5rem;
       height: 0.3rem;
       border-radius: 1rem;
@@ -147,14 +148,20 @@
 
     .hamburger::before,
     .hamburger::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       right: 0;
     }
 
-    .hamburger::before { top: 0.8rem; }
-    .hamburger::after { bottom: 0.8rem; }
+    .hamburger::before {
+      background: $orange;
+      top: 0.8rem;
+    }
+    .hamburger::after {
+      background: $green;
+      bottom: 0.8rem;
+    }
   }
 
   .nav-open .header-part1 #nav {
@@ -166,15 +173,16 @@
   }
 
   .nav-open .hamburger {
-    transform: rotate(.625turn);
-    background-color: $starWhite;
+    transform: rotate(0.625turn);
+    background-color: $light;
   }
 
   .nav-open .hamburger::before {
-    transform: rotate(89deg) translateX(-7px);
-    background-color: $starWhite;
+    transform: rotate(89deg) translateX(-6px);
+    background-color: $light;
   }
 
-  .nav-open .hamburger::after { opacity: 0; }
-  
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
 }

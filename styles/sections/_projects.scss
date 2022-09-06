@@ -1,19 +1,25 @@
 #projects {
-  padding: 10% 8% 8%;
+  padding: 10% 8% 8%; // Can be Improved
 
   .projects-head {
     display: inline-block;
-    font-family: $heading;
-    font-size: $large;
-    border-left: 2px solid $green;
-    border-bottom: 2px solid $purple;
-    padding: 1% 1%;
+    font-family: $roboto;
+    border-bottom: 2px solid $primaryColor;
+    padding-bottom: 3px;
+    margin-bottom: 8%;
   }
 
   .project {
     display: flex;
     justify-content: space-between;
-    padding: 8% 0%;
+    padding: 4rem 0 6rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0 4rem;
+    }
 
     .tilt {
       transform-style: preserve-3d;
@@ -25,39 +31,41 @@
       cursor: pointer;
       border-radius: 2px;
       box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .project-text {
       width: 45%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 4rem 0 0; // Top
+      }
+
       .project-heading {
-        font-family: $heading;
-        font-size: $large;
+        font-family: $roboto;
       }
       .project-description {
-        font-family: $paragraph;
+        font-family: $openSans;
         font-weight: 400;
-        font-size: $small;
-        margin: 1rem 0 1.4rem;
+        margin: 1rem 0 1rem; // Top and Bottom
         text-align: justify;
       }
     }
 
     .project-image2 {
       order: 2;
+      @media screen and (max-width: 768px) {
+        order: 1;
+      }
     }
     .project-text2 {
       order: 1;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #projects {
-    .project {
-      grid-template-columns: 100%;
-
-      .project-image {
-        margin: auto auto 4rem;
+      @media screen and (max-width: 768px) {
+        order: 2;
       }
     }
   }

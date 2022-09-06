@@ -1,21 +1,18 @@
-
-#contact{
+#contact {
+  padding: 12% 0% 8%; // Can be improved
   text-align: center;
-  color: $starWhite;
+  color: $light;
   background: $linearGradient;
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  padding: 12% 0% 8%;
 
-  h2{
-    margin-top: 3rem;
-    font-family: $heading;
-    font-size: 2.5rem;
+  h4 {
+    font-family: $roboto;
   }
 }
 
-@media screen and (max-width:768px){
-  #contact{
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 10% 0%; // Can be improved
     clip-path: none;
-    padding: 8% 0%;
   }
 }
