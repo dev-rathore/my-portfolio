@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="My Portfolio Website" />
+
+    <title>Dev's Portfolio</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Font Awesome -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+  </script> -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header">
+      <!-- Header Part-1 -->
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="header-part1">
+        <nav id="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link btn-underline-from-center" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-underline-from-center" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-underline-from-center" href="#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-underline-from-center" href="#projects"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Logo -->
+        <div class="logo">My Portfolio</div>
+      </div>
+
+      <!-- Header Part-2 -->
+      <div class="header-part2">
+        <div class="heading">
+          <h1>Hi, I am Devender</h1>
+          <p>Full Stack Web Developer | Javascript Developer</p>
+          <button onclick="location.href='#about'" class="btn btn-translate">
+            Know more
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="profile">
+        <img
+          class="profile-image"
+          src="./assets/profile-img.jpg"
+          alt="Profile Image"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+        />
+
+        <div class="about-me" data-aos="zoom-out-left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            dolorem dolore enim ea et, repudiandae quis quaerat dignissimos
+            similique sequi mollitia ab facere iure repellat, velit, perferendis
+            labore voluptatem voluptate?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            sequi accusantium incidunt doloribus nostrum ipsa voluptatem atque
+            laudantium delectus. Corrupti quas assumenda rerum laudantium illum,
+            obcaecati ex delectus perferendis! Libero?
+          </p>
+          <button
+            class="btn btn-sweep-to-right"
+            onclick="window.open('./assets/Resume.pdf', '_blank'); return false;"
+          >
+            Resume
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="projects-head">My Projects</h2>
+      <div class="project">
+        <img
+          class="tilt project-image project-image1"
+          src="./assets/where-is-the-face.png"
+          alt="Where is the face"
+          data-aos="fade-down-right"
+          data-tilt
+        />
+        <div class="project-text project-text1" data-aos="fade-up-left">
+          <h2 class="project-heading">Pixel Store</h2>
+          <p class="project-description">
+            Pixel Store is an E-commerce store for buying products like camera,
+            gimbals, tripods, drones built using
+            <span class="highlight">ReactJS</span>. It also has authentication
+            and database that are implemented using
+            <span class="highlight">Firebase</span> authentication and
+            firestore. For state management in ReactJS,
+            <span class="highlight">React Context API</span> is used. And
+            routing is done using
+            <span class="highlight">React Router DOM</span>. This store is
+            deployed on <span class="highlight">Netlify</span>.
+          </p>
+          <button
+            class="btn btn-wobble-bottom"
+            onclick="window.open('https://github.com/dev-rathore/pixel-store', '_blank'); return false;"
+          >
+            Source Code
+          </button>
+          <button
+            class="btn btn-translate"
+            onclick="window.open('https://dev-rathore-pixel-store.netlify.app/', '_blank'); return false;"
+          >
+            See Live
+          </button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img
+          class="tilt project-image project-image2"
+          src="./assets/where-is-the-face.png"
+          alt="Where is the face"
+          data-aos="fade-down-right"
+          data-tilt
+        />
+        <div class="project-text project-text2" data-aos="fade-up-left">
+          <h2 class="project-heading">Rent & Ride</h2>
+          <p class="project-description">
+            Rent & Ride is a vehicle rental website that has feature for renting
+            different types of vehicles e.g. four wheeler, two wheeler for a
+            short period of time. It is build using technologies like
+            <span class="highlight">HTML</span>,
+            <span class="highlight">CSS</span>,
+            <span class="highlight">JavaScript</span>,
+            <span class="highlight">Bootstrap</span>,
+            <span class="highlight">SASS</span>,
+            <span class="highlight">NodeJS</span>,
+            <span class="highlight">ExpressJS</span>,
+            <span class="highlight">Passport.js</span>,
+            <span class="highlight">MongoDB</span>. This website is deployed on
+            <span class="highlight">Heroku</span>.
+          </p>
+          <button
+            class="btn btn-wobble-bottom"
+            onclick="window.open('https://github.com/dev-rathore/rent-and-ride', '_blank'); return false;"
+          >
+            Source Code
+          </button>
+          <button
+            class="btn btn-translate"
+            onclick="window.open('https://rentandrideweb.herokuapp.com/', '_blank'); return false;"
+          >
+            See Live
+          </button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img
+          class="tilt project-image project-image3"
+          src="./assets/where-is-the-face.png"
+          alt="Where is the face"
+          data-aos="fade-down-right"
+          data-tilt
+        />
+        <div class="project-text project-text3" data-aos="fade-up-left">
+          <h2 class="project-heading">Weather Web App</h2>
+          <p class="project-description">
+            Pixel Store is an E-commerce store built using
+            <span class="highlight">ReactJS</span>. It also has authentication
+            and database that are implemented using
+            <span class="highlight">Firebase</span> authentication and
+            firestore. For state management in ReactJS,
+            <span class="highlight">React Context API</span> is used. And
+            routing is done using
+            <span class="highlight">React Router DOM</span>.
+          </p>
+          <button
+            class="btn btn-wobble-bottom"
+            onclick="window.open('https://github.com/dev-rathore', '_blank'); return false;"
+          >
+            Source Code
+          </button>
+          <button
+            class="btn btn-translate"
+            onclick="window.open('http://weather-api-web-app.herokuapp.com/', '_blank'); return false;"
+          >
+            See Live
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="skills-head">My Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <i class="origin reactjs fab fa-react fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin javascript fab fa-js fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin css fab fa-css3-alt fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin bootstrap fab fa-bootstrap fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin html fab fa-html5 fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin nodejs fab fa-node fa-2x"></i>
+        </div>
+        <div class="skill">
+          <img
+            class="origin expressjs"
+            src="./assets/expressjs.png"
+            alt="Express.js"
+          />
+        </div>
+        <div class="skill">
+          <img
+            class="origin mongodb"
+            src="./assets/mongodb.png"
+            alt="MongoDB"
+          />
+        </div>
+        <div class="skill">
+          <img
+            class="origin postgresql"
+            src="./assets/postgresql.png"
+            alt="Postgresql"
+          />
+        </div>
+        <div class="skill">
+          <img class="origin ejs" src="./assets/ejs.jpg" alt="EJS" />
+        </div>
+        <div class="skill">
+          <i class="origin git fab fa-git-square fa-2x"></i>
+        </div>
+        <div class="skill">
+          <i class="origin java fab fa-java fa-2x"></i>
+        </div>
+        <div class="skill">
+          <img class="origin c-plus-plus" src="./assets/c++.png" alt="C++" />
+        </div>
+        <div class="skill">
+          <img class="origin c" src="./assets/c.png" alt="C" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-aos="fade-right">CONTACT</h2>
+      <button
+        onclick="location.href='mailto:rathoredvd3001@email.com'"
+        class="btn btn-sweep-to-right"
+        data-aos="fade-left"
+      >
+        Mail Me
+      </button>
+    </section>
+
+    <footer id="footer">
+      <div>
+        <a
+          href="https://twitter.com/?lang=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="icon fab fa-twitter fa-3x"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/devender-singh-rathore-811528186"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="icon fab fa-linkedin fa-3x"></i>
+        </a>
+
+        <a
+          href="https://github.com/dev-rathore"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="icon fab fa-github fa-3x"></i>
+        </a>
+      </div>
+      <p class="copyright">&#169; 2022 | Devender Singh Rathore</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+    <!-- Vanilla Tilt -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".tilt"), {
+        max: 45,
+        speed: 100,
+        reverse: true,
+      });
+    </script>
+
+    <!-- Animate on scroll (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

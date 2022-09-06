@@ -1,0 +1,61 @@
+
+#skills{
+  padding: 0% 8% 8%;
+}
+
+.skills-head{
+  display: inline-block;
+  font-family: $heading;
+  font-size: $large;
+  border-left: 2px solid $green;
+  border-bottom: 2px solid $purple;
+  padding: 1% 1%;
+}
+
+.skills-list{
+  padding-top: 8%;
+  font-size: 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+}
+
+.skill{
+  margin: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
+.skill img, .skill i{
+  cursor: pointer;
+}
+.reactjs{ color: #0B9CEB; }
+.javascript{ color: #F1C40F; }
+.css{ color: #217DE1; }
+.bootstrap{ color: #8319F9; }
+.html{ color: #F86C2F; }
+.nodejs{ color: #0F913D; }
+.expressjs{ height: 45px;}
+.mongodb{ width: 25px; }
+.postgresql{ width: 45px; }
+.ejs{ width: 45px; }
+.git{ color:#0FA854; }
+.java{ color: #E1195B }
+.c-plus-plus{ width: 45px; }
+.c{ width: 45px; }
+ 
+.origin {
+  animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
+  @keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+@media screen and (max-width:768px){
+  .skills-list{
+    grid-template-columns: auto auto auto;
+  }
+}

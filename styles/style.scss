@@ -1,0 +1,25 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./components/icons";
+
+
+// Header + Navigation Section
+@import "./sections/header";
+
+// About Section
+@import "./sections/about";
+
+// Skills Section
+@import "./sections/skills";
+
+// Projects Section
+@import "./sections/projects";
+
+// Contact
+@import "./sections/contact";
+
+// Footer
+@import "./sections/footer";

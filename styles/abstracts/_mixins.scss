@@ -1,0 +1,12 @@
+
+@mixin logo-pseudo{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  transition: width ease 0.3s, height ease 0.3s;
+}
+@mixin logo-hover {
+  width: 110%;
+  height: 120%;
+}

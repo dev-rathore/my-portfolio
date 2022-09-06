@@ -1,0 +1,21 @@
+
+#contact{
+  text-align: center;
+  color: $starWhite;
+  background: $linearGradient;
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 12% 0% 8%;
+
+  h2{
+    margin-top: 3rem;
+    font-family: $heading;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width:768px){
+  #contact{
+    clip-path: none;
+    padding: 8% 0%;
+  }
+}
