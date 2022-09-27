@@ -155,11 +155,11 @@
     }
 
     .hamburger::before {
-      background: $orange;
+      background: $green;
       top: 0.8rem;
     }
     .hamburger::after {
-      background: $green;
+      background: $orange;
       bottom: 0.8rem;
     }
   }
