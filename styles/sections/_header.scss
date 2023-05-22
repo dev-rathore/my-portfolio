@@ -92,12 +92,12 @@
       background: $dark;
       color: $light;
       transform-origin: 0% 0%;
-      transform: translate(-100%, 0);
+      transform: translate(0, 0);
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
       top: 0;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: -100%;
+      right: 100%;
       z-index: 100;
 
       .nav-list {
@@ -165,7 +165,7 @@
   }
 
   .nav-open .header-part1 #nav {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
 
   .nav-open .nav-toggle {

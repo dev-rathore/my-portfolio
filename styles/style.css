@@ -359,16 +359,16 @@ p {
     color: #f4f2ff;
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -100%;
+    right: 100%;
     z-index: 100;
   }
   .header-part1 #nav .nav-list {
@@ -438,8 +438,8 @@ p {
     bottom: 0.8rem;
   }
   .nav-open .header-part1 #nav {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   .nav-open .nav-toggle {
     position: fixed;
